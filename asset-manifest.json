@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/movie-app/static/css/main.c0d2efd4.css",
+    "main.js": "/movie-app/static/js/main.beea4080.js",
+    "static/media/wallpaperflare.com_wallpaper.jpg": "/movie-app/static/media/wallpaperflare.com_wallpaper.2397242b07e5ac6fc1ee.jpg",
+    "index.html": "/movie-app/index.html",
+    "main.c0d2efd4.css.map": "/movie-app/static/css/main.c0d2efd4.css.map",
+    "main.beea4080.js.map": "/movie-app/static/js/main.beea4080.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0d2efd4.css",
+    "static/js/main.beea4080.js"
+  ]
+}
