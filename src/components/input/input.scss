@@ -1,0 +1,10 @@
+@use '../../scss/variables' as *;
+
+input {
+    border: 0;
+    background-color: $body-bg;
+    border-radius: $border-radius-first;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: $text-color;
+}

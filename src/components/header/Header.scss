@@ -1,0 +1,83 @@
+@use '../../scss/' as *;
+
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+    color: $text-color;
+
+    @include flex(center,unset);
+    span {
+        color: $main-color;
+    }
+}
+.header {
+    height: $header-height;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: height .3s ease,background-color 0.3s ease;
+    
+    &.shrink {
+        height: $header-shrink-height;
+        background-color: $body-bg;
+        padding-top: 10px;
+    }
+
+    &_wrap {
+        @include flex(center,space-between);
+        height: 70%;
+        padding: 0 2rem;
+
+        @include mobile {
+            justify-content: center;
+        }
+    }
+    &_nav {
+        @include flex(center,unset);
+
+        & > * ~ * {
+            margin-left: 2rem;
+        }
+
+        li {
+            padding: 5px 0;
+            font-weight: bold;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0%;
+                transform: translateX(0%);
+                width: 0;
+                transition: width .5s ease;
+                height: 2px;
+                background-color: $main-color;
+            }
+            &.active::after,
+            &:hover::after {
+                width: 100%;
+                color: $main-color;
+            }
+        }
+        @include mobile {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 4rem;
+            width: 100%;
+            background-color: $body-bg;
+            box-shadow: $box-shadow;
+
+            @include flex(center,space-between);
+            padding: 0 2rem;
+
+            & > * ~ * {
+                margin-left: 0;
+            }
+        }
+    }
+}

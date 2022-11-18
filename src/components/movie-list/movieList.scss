@@ -1,0 +1,19 @@
+@use '../../scss/breackpnt' as *;
+
+.movie-list {
+    .swiper-wrapper {
+        height: fit-content;
+        .swiper-slide {
+            width: 13%;
+            max-height: fit-content;
+    
+            @include tablet {
+                width: 30%;
+            }
+    
+            @include tablet {
+                width: 40%;
+            }
+    }
+    }
+}

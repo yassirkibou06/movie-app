@@ -1,0 +1,74 @@
+$body-bg: #000;
+$text-color: #fff;
+$main-color: #FE0000;
+
+$box-shadow: rgba(100,100,111,0.4) 0px 7px 29px 0px;
+
+$header-height: 8rem;
+$header-shrink-height: 4rem;
+$border-radius-first: 30px;
+$border-radius-second: 50px;
+/*medai responsive*/
+$mobile-width: 600px !default;
+$tablet-width: 1024px !default;
+/* font */
+$font-family: 'Nunito', sans-serif;
+
+
+
+
+///<img src={`${ApiConfig.w500Image(item.poster_path)}`} alt={item.name} />
+/// 
+/// 
+/*
+<div className='container'>
+<div className='section mb-3 mt-2'>
+  <div className='section_header mb-2'>
+    <h2>Trending Movies</h2>
+    <Link to='/movie'>
+      <ButtonOutline className="small">View more</ButtonOutline>
+    </Link>
+  </div>
+  <MovieList fetchUrl={requests.fetchTrending} category={category.movie}/>
+</div>
+
+<div className='section mb-3 mt-2'>
+<div className='section_header mb-2'>
+  <h2>Top Rated Movie</h2>
+  <Link to='/movie'>
+    <ButtonOutline className="small">View more</ButtonOutline>
+  </Link>
+</div>
+<MovieList fetchUrl={requests.fetchTopRated} category={category.movie}/>
+</div>
+
+<div className='section mb-3 mt-2'>
+<div className='section_header mb-2'>
+  <h2>Action Movie</h2>
+  <Link to='/movie'>
+    <ButtonOutline className="small">View more</ButtonOutline>
+  </Link>
+</div>
+<MovieList fetchUrl={requests.fetchActionMovies} category={category.movie}/>
+</div>
+
+<div className='section mb-3 mt-2'>
+<div className='section_header mb-2'>
+  <h2>Comedy Movie</h2>
+  <Link to='/movie'>
+    <ButtonOutline className="small">View more</ButtonOutline>
+  </Link>
+</div>
+<MovieList fetchUrl={requests.fetchComedyMovies} category={category.movie}/>
+</div>
+
+<div className='section mb-3 mt-2'>
+<div className='section_header mb-2'>
+  <h2>Top Rated Tv</h2>
+  <Link to='/tv'>
+    <ButtonOutline className="small">View more</ButtonOutline>
+  </Link>
+</div>
+<MovieList fetchUrl={requests.fetchTopRatedTv} category={category.tv}/>
+</div>
+</div>*/

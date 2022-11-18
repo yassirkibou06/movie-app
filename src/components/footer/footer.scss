@@ -1,0 +1,47 @@
+@use '../../scss/' as *;
+
+.footer {
+    position: relative;
+    padding: 3rem 2rem;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 6rem;
+
+    @include tablet {
+        padding: 2rem 0rem;
+        height: 25%;
+    }
+
+    @include mobile {
+        padding: 2rem 0rem;
+        height: 40%;
+    }
+
+    .logo {
+        justify-content: center;
+        z-index: 5;
+        font-size: 45px;
+        padding-bottom: 30px;
+
+    }
+    .footer-contact-menus {
+        display: flex;
+        justify-content: space-evenly;
+
+        .footer-contact-menu {
+            margin-top: 1rem;
+            a {
+                display: block;
+                font-weight: bold;
+                font-size: 18px;
+                padding: 5px;
+                width: fit-content;
+
+                @include mobile {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
