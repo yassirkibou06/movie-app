@@ -76,7 +76,7 @@ const HeroSlide = () => {
           "--swiper-pagination-bullet-inactive-color": "#999999",
           "--swiper-pagination-bullet-inactive-opacity": "1"
         }}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 4000 }}
         className="mySwiper"
       >
         {moviesItems.map((movie) => (
