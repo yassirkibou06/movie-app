@@ -2,18 +2,34 @@
 
 .mySwiper {
     position: relative;
+
+    .swiper-wrapper {
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+
+            @include tablet {
+                background-position: top;
+            }
+
+            @include mobile {
+                background-position: top;
+            }
+        }
+    }
+
     .content-overlay {
         @include overlay();
         width: 100%;
         height: 100%;
     }
-    
+
     .content_movie_content_info {
         position: absolute;
         top: 20%;
         left: 8%;
         transition-delay: .3s .3s;
-    
+
         .content-title {
             font-weight: bold;
             letter-spacing: 2px;
@@ -25,7 +41,7 @@
                 font-size: 49px;
             }
         }
-    
+
         .content-desc {
             font-weight: 100;
             line-height: 25px;
@@ -37,21 +53,23 @@
                 line-height: 20px;
             }
         }
-    
+
         .btn-content {
             margin-top: 30px;
             margin-right: 15px;
             font-weight: bold;
         }
-    
+
         .content-trailer {
             position: absolute;
             width: 100%;
-            top: 60%;
-            left: 71%;
+            top: 69%;
+            left: 68%;
+
             @include tablet {
                 visibility: hidden;
             }
+
             @include mobile {
                 visibility: hidden;
             }
@@ -64,6 +82,7 @@
             }
         }
     }
+
     .player-yt {
         position: absolute;
         top: 30%;
@@ -73,10 +92,12 @@
         @include tablet {
             left: 10%;
         }
+
         @include mobile {
             left: 10%;
         }
     }
+
     .iframe-yt {
         height: 390px;
         width: 100vh;
@@ -84,10 +105,10 @@
         @include tablet {
             width: 600px;
         }
+
         @include mobile {
             width: 100%;
             height: 280px;
         }
     }
 }
-

@@ -26,7 +26,7 @@ const HeroSlide = () => {
     const getMovies = async () => {
       const params = { page: 1 }
       try {
-        const response = await tmdbApi.getMoviesList(movieType.upcoming, { params });
+        const response = await tmdbApi.getMoviesList(movieType.popular, { params });
         setMoviesItems(response.results.slice(3, 6));
       } catch (error) {
         console.log(error.response);
@@ -81,8 +81,7 @@ const HeroSlide = () => {
       >
         {moviesItems.map((movie) => (
           <SwiperSlide key={movie.id} style={{
-            backgroundImage: `url(${ApiConfig.originalImage(movie.backdrop_path)})`,
-            backgroundPosition: 'center', backgroundSize: 'cover'
+            backgroundImage: `url(${ApiConfig.originalImage(movie.backdrop_path)})`
           }}>
             <div className='content-overlay'></div>
             <div className='content_movie_content_info'>
