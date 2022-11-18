@@ -26,8 +26,8 @@ const HeroSlide = () => {
     const getMovies = async () => {
       const params = { page: 1 }
       try {
-        const response = await tmdbApi.getMoviesList(movieType.top_rated, { params });
-        setMoviesItems(response.results.slice(2, 5));
+        const response = await tmdbApi.getMoviesList(movieType.upcoming, { params });
+        setMoviesItems(response.results.slice(3, 6));
       } catch (error) {
         console.log(error.response);
       }
