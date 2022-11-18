@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { Route, HashRouter } from 'react-router-dom'
 import Header from './components/header/Header';
 import Routes from './Config/Routes';
 import Footer from './components/footer/Footer';
@@ -7,7 +7,7 @@ import Footer from './components/footer/Footer';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Route render={props => (
       <>
       <Header  {...props}/>
@@ -15,7 +15,7 @@ function App() {
       <Footer  />
       </>
     )} />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
