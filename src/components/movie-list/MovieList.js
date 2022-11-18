@@ -30,7 +30,7 @@ const MovieList = props => {
             setItems(response.results);
         }
         getList();
-    }, []);
+    }, [props.category,props.type,props.id]);
 
     return (
         <div className='movie-list'>

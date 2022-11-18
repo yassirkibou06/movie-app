@@ -24,7 +24,7 @@ const HeroSlide = () => {
 
   useEffect(() => {
     const getMovies = async () => {
-      const params = { page: 2 }
+      const params = { page: 1 }
       try {
         const response = await tmdbApi.getMoviesList(movieType.top_rated, { params });
         setMoviesItems(response.results.slice(2, 5));
